@@ -1,55 +1,41 @@
-# Fiber Dataset for Collagen Fiber Orientation Analysis
-
+ Fiber Dataset for Collagen Fiber Orientation Analysis
 This repository contains datasets used for analyzing collagen fiber orientations in various biological tissues. The data includes both 2D patch images and 3D slice scans of biological and clinically approved tissues. The dataset is designed to support research in tissue engineering, biomedical imaging, and fiber orientation estimation.
 
-## Dataset Overview
-
+•	Dataset Overview
 The dataset is organized into the following categories:
+•	1. Biological Porcine
+•	Description: 12 different patch images of porcine tissue, with one image containing a 3D slice scan of the tissue.
+•	Files Included:
+o	12 2D patch images.
+o	1 3D slice scan.
+•	2. Chick Embryo
+•	Description: 2D slice scan of a chick embryo heart.
+•	Files Included:
+o	1 2D heart slice scan.
+•	3. Clinically Approved Bovine
+•	Description: 9 different patch images of bovine tissue, with 3 images containing 3D slice scans.
+•	Files Included:
+o	9 2D patch images.
+o	3 3D slice scans.
+•	4. Clinically Approved Porcine
+•	Description: 7 different patch images of clinically approved porcine tissue, with 4 images containing 3D slice scans.
+•	Files Included:
+o	7 2D patch images.
+o	4 3D slice scans.
 
-### 1. Biological Porcine
-- **Description**: 12 different patch images of porcine tissue, with one image containing a 3D slice scan of the tissue.
-- **Files Included**:
-  - 12 2D patch images.
-  - 1 3D slice scan.
-
-### 2. Chick Embryo
-- **Description**: 2D slice scan of a chick embryo heart.
-- **Files Included**:
-  - 1 2D heart slice scan.
-
-### 3. Clinically Approved Bovine
-- **Description**: 9 different patch images of bovine tissue, with 3 images containing 3D slice scans.
-- **Files Included**:
-  - 9 2D patch images.
-  - 3 3D slice scans.
-
-### 4. Clinically Approved Porcine
-- **Description**: 7 different patch images of clinically approved porcine tissue, with 4 images containing 3D slice scans.
-- **Files Included**:
-  - 7 2D patch images.
-  - 4 3D slice scans.
-
-## Purpose of the Dataset
+	Purpose of the Dataset
 This dataset is intended for use in research focused on the analysis of fiber orientations in various tissues. It can be used for developing and testing algorithms for 2D and 3D image analysis, including deep learning and machine learning approaches to model fiber structures and tissue architecture.
 
-## License
-
+	License
 This dataset is made available under the [Specify your license here]. Please refer to the LICENSE file for more information.
 
+	Contact
+For any questions, issues, or suggestions regarding the dataset, please contact:
+•	Name: Eda Nur Saruhan
+•	Email: [edasaruhan21@ku.edu.tr]
 
-## Contact
-
-For any questions, issues, or suggestions regarding the dataset, please contact:  
-- **Name**: Eda Nur Saruhan  
-- **Email**: [edasaruhan21@ku.edu.tr]
-
-## Acknowledgments
-
-We thank the contributors and organizations that have made this dataset possible. We would like to acknowledge the support from the European Research Council (ERC) Proof of Concept BloodTurbine 966765, TUBITAK 118S108 and BİDEB - 2247A - 120C139. 
-
----
-
-### How to Use the Dataset
+	Acknowledgments
+We thank the contributors and organizations that have made this dataset possible. We would like to acknowledge the support from the European Research Council (ERC) Proof of Concept BloodTurbine 966765, TUBITAK 118S108, and BİDEB - 2247A - 120C139.
+	How to Use the Dataset
 To download the dataset, simply clone this repository to your local machine:
-```bash
 git clone https://github.com/esaruhann/Learning-enhanced-3D-fiber-orientation-mapping-in-thick-cardiac-tissues.git
