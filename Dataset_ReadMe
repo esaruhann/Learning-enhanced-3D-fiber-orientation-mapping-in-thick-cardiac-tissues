@@ -3,25 +3,29 @@ This repository contains datasets used for analyzing collagen fiber orientations
 
 Dataset Overview
 The dataset is organized into the following categories:
-1. Biological Porcine
-Description: 12 different patch images of porcine tissue, with one image containing a 3D slice scan of the tissue.
-Files Included:
-   •12 2D patch images.
-   •1 3D slice scan.
-2. Chick Embryo
-Description: 2D slice scan of a chick embryo heart.
-Files Included:
-   •1 2D heart slice scan.
-3. Clinically Approved Bovine
-Description: 9 different patch images of bovine tissue, with 3 images containing 3D slice scans.
-Files Included:
-   •9 2D patch images.
-   •3 3D slice scans.
-4. Clinically Approved Porcine
-Description: 7 different patch images of clinically approved porcine tissue, with 4 images containing 3D slice scans.
-Files Included:
-   •7 2D patch images.
-   •4 3D slice scans.
+1. Training Dataset
+The training dataset consists of both biological and synthetic data to ensure robust model generalization. It includes:
+
+Biological Data:
+        •400 biological samples obtained from a clinically approved porcine pericardium patch, each segmented into 50×50 voxel regions.
+        •Non-fiber regions removed during post-processing to retain only relevant fiber structures.
+Synthetic Data:
+        •8 high-quality synthetic images generated using a diffusion model, further divided into 50×50 voxel segments, leading to 800 synthetic samples.
+        •These images were designed to mimic real-world fiber structures and ensure diverse fiber orientations.
+Total Initial Dataset: 1,200 samples (400 biological + 800 synthetic).
+Final Augmented Dataset: 4,000 samples after rotations, scaling, and noise addition.
+
+2. Testing Dataset
+The testing dataset is designed for both 2D and 3D verification and includes:
+Synthetic Data for 2D Verification:
+        •MATLAB-generated linear structures with controlled orientations.
+        •Two high-quality synthetic images from diffusion models (distinct from those used in training).
+Biological Data for 2D and 3D Verification:
+        •8 samples analyzed for each case, consisting of 4 samples from 4 different pericardia, with 2 different locations per pericardium.
+    Tissue Types:
+       •Clinically approved bovine and porcine pericardium.
+       •Biological porcine pericardium.
+ Chick Embryo Heart Data for 3D fiber orientation validation.
 
 Purpose of the Dataset
 This dataset is intended for use in research focused on the analysis of fiber orientations in various tissues. It can be used for developing and testing algorithms for 2D and 3D image analysis, including deep learning and machine learning approaches to model fiber structures and tissue architecture.
