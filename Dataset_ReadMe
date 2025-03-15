@@ -7,13 +7,13 @@ The dataset is organized into the following categories:
 The training dataset consists of both biological and synthetic data to ensure robust model generalization. It includes:
 
 Biological Data:
-        •400 biological samples obtained from a clinically approved porcine pericardium patch, each segmented into 50×50 voxel regions.
+        •536 biological samples obtained from a clinically approved porcine pericardium patch, each segmented into 50×50 voxel regions.
         •Non-fiber regions removed during post-processing to retain only relevant fiber structures.
 Synthetic Data:
         •8 high-quality synthetic images generated using a diffusion model, further divided into 50×50 voxel segments, leading to 800 synthetic samples.
         •These images were designed to mimic real-world fiber structures and ensure diverse fiber orientations.
-Total Initial Dataset: 1,200 samples (400 biological + 800 synthetic).
-Final Augmented Dataset: 4,000 samples after rotations, scaling, and noise addition.
+Total Initial Dataset: 1,200 samples (536 biological + 611 synthetic).
+Final Augmented Dataset: 5649 samples after rotations, scaling, and noise addition.
 
 2. Testing Dataset
 The testing dataset is designed for both 2D and 3D verification and includes:
